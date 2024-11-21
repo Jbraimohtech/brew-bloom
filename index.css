@@ -100,7 +100,7 @@ nav li a:hover {
 .espresso {
     grid-area: espresso;
     text-align: justify;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -116,7 +116,7 @@ nav li a:hover {
 .doppio {
     grid-area: doppio;
     text-align: justify;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -133,7 +133,7 @@ nav li a:hover {
 .shortMacchiato {
     grid-area: shortMacchiato;
     text-align: justify;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -150,7 +150,7 @@ nav li a:hover {
 .longMacchiato {
     grid-area: longMacchiato;
     text-align: justify;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -166,7 +166,7 @@ nav li a:hover {
 .latte {
     grid-area: latte;
     text-align: justify;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -182,7 +182,7 @@ nav li a:hover {
 .mezzo {
     grid-area: mezzo;
     text-align: justify;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -199,7 +199,7 @@ nav li a:hover {
     grid-area: otherCoffee;
     text-align: center;
     margin: 0 auto;
-    width: 400px;
+    width: 26rem;
     height: 280px;
 }
 
@@ -215,7 +215,7 @@ nav li a:hover {
 
 .theFoot {
     display: grid;
-    grid-gap: 150px;  
+    grid-gap: 100px;  
     grid-template-areas:
     "ourOffice usefulLink newsletter"
     "ourOffice usefulLink newsletter"
@@ -240,6 +240,7 @@ nav li a:hover {
     text-align: justify;
     width: 400px;
     height: fit-content;
+    margin-left: 50px;
 }
 
 .usefulLink li{
@@ -253,6 +254,7 @@ nav li a:hover {
     text-align: justify;
     width: 500px;
     height: fit-content;
+    margin-left: 50px;
 }
 
 .downDown {
@@ -303,48 +305,92 @@ img {
 .espressoImage {
     grid-area: espressoImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.espressoImage:hover {
+    transform: translateY(-5px);
 }
 
 .doppioImage {
     grid-area: doppioImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.doppioImage:hover {
+    transform: translateY(-5px);
 }
 
 .shortMacchiatoImage {
     grid-area: shortMacchiatoImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.shortMacchiatoImage:hover {
+    transform: translateY(-5px);
 }
 
 .longMacchiatoImage {
     grid-area: longMacchiatoImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.longMacchiatoImage:hover {
+    transform: translateY(-5px);
 }
 
 .latteImage {
     grid-area: latteImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.latteImage:hover  {
+    transform: translateY(-5px);
 }
 
 .mezzoImage {
     grid-area: mezzoImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mezzoImage:hover {
+    transform: translateY(-5px);
 }
 
 .ristrettoImage {
     grid-area: ristrettoImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.ristrettoImage:hover {
+    transform: translateY(-5px);
 }
 
 .flatWhiteImage {
     grid-area: flatWhiteImage;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.flatWhiteImage:hover {
+    transform: translateY(-5px);
 }
 
 .longBlackImage {
     grid-area: longBlackImage;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
+.longBlackImage:hover {
+    transform: translateY(-5px);
+}
 
 
 .externalIcons i {
@@ -381,7 +427,6 @@ img {
     float: left;
     padding: 10px;
 }
-
 
 @media (max-width: 768px) {
 nav {
