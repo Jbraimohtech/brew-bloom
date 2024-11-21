@@ -433,6 +433,10 @@ nav {
     padding-left: 50px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .menu {
     display: grid;
     grid-gap: 5px;
@@ -465,37 +469,46 @@ nav {
 
  .espressoImage {
     grid-area: espressoImage;
+    margin-right: 50px;
  }
 
  .doppioImage {
     grid-area: doppioImage;
+    margin-right: 50px;
  }
 
  .shortMacchiatoImage {
     grid-area: shortMacchiatoImage;
+    margin-right: 50px;
  }
 
  .longMacchiatoImage {
     grid-area: longMacchiatoImage;
+    margin-right: 50px;
  }
 
  .latteImage {
     grid-area: latteImage;
+    margin-right: 50px;
  }
 
  .mezzoImage {
     grid-area: mezzoImage;
+    margin-right: 50px;
  }
 
  .ristrettoImage {
     grid-area: ristrettoImage;
+    margin-right: 50px;
  }
  .flatWhiteImage {
     grid-area: flatWhiteImage;
+    margin-right: 50px;
  }
 
  .longBlackImage {
     grid-area: longBlackImage;
+    margin-right: 50px;
  }
 
  .theFoot {
@@ -510,18 +523,22 @@ nav {
 
  .ourOffice {
     grid-area: ourOffice;
+    margin-right: 50px;
  }
 
  .useFulLInk {
     grid-area: useFulLInk;
+    margin-right: 50px;
  }
 
  .newsletter {
     grid-area: newsletter;
     margin-left: 0px;
+    margin-right: 50px;
  }
 
  .downDown {
     grid-area: downDown;
+    margin-right: 50px;
  }
 }
