@@ -381,3 +381,102 @@ img {
     float: left;
     padding: 10px;
 }
+
+
+@media (max-width: 768px) {
+nav {
+    padding-left: 50px;
+}
+
+.menu {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "ourMenu"
+    "espresso"
+    "doppio"
+    "shortMacchiato"
+    "longMacchiato"
+    "latte"
+    "mezzo"
+    "otherCoffee";
+}
+
+
+ .gallery {
+    display: grid;
+    grid-gap: 10px;
+   grid-template-areas: 
+   "espressoImage"
+   "doppioImage"
+   "shortMacchiatoImage"
+   "longMacchiatoImage"
+   "latteImage"
+   "mezzoImage"
+   "ristrettoImage"
+   "flatWhiteImage"
+   "longBlackImage";
+ }
+
+ .espressoImage {
+    grid-area: espressoImage;
+ }
+
+ .doppioImage {
+    grid-area: doppioImage;
+ }
+
+ .shortMacchiatoImage {
+    grid-area: shortMacchiatoImage;
+ }
+
+ .longMacchiatoImage {
+    grid-area: longMacchiatoImage;
+ }
+
+ .latteImage {
+    grid-area: latteImage;
+ }
+
+ .mezzoImage {
+    grid-area: mezzoImage;
+ }
+
+ .ristrettoImage {
+    grid-area: ristrettoImage;
+ }
+ .flatWhiteImage {
+    grid-area: flatWhiteImage;
+ }
+
+ .longBlackImage {
+    grid-area: longBlackImage;
+ }
+
+ .theFoot {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "ourOffice"
+    "useFulLInk"
+    "newsletter"
+    "downDown";
+ }
+
+ .ourOffice {
+    grid-area: ourOffice;
+ }
+
+ .useFulLInk {
+    grid-area: useFulLInk;
+ }
+
+ .newsletter {
+    grid-area: newsletter;
+    margin-left: 0px;
+ }
+
+ .downDown {
+    grid-area: downDown;
+ }
+}
