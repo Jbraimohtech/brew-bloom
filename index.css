@@ -84,7 +84,7 @@ nav li a:hover {
 
 .menu {
     display: grid;
-    grid-gap: 90px;
+    grid-gap: 10px;
     grid-template-areas: 
     "ourMenu ourMenu ourMenu"
     "espresso doppio shortMacchiato"
@@ -215,7 +215,7 @@ nav li a:hover {
 
 .theFoot {
     display: grid;
-    grid-gap: 100px;  
+    grid-gap: 10px;  
     grid-template-areas:
     "ourOffice usefulLink newsletter"
     "ourOffice usefulLink newsletter"
@@ -295,7 +295,7 @@ img {
 .gallery {
    padding: 50px;
    display: grid;
-   grid-gap: 90px;
+   grid-gap: 10px;
    grid-template-areas: 
    "espressoImage doppioImage shortMacchiatoImage"
    "longMacchiatoImage latteImage mezzoImage"
