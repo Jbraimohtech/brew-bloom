@@ -7,6 +7,17 @@ body {
     box-sizing: border-box;
 }
 
+.notificationContainer {
+    display: none;
+    border: 1px solid #9d6538;
+    color: black;
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
 header {
     padding-top: 20px;
 }
@@ -79,6 +90,7 @@ nav li a:hover {
 .price:hover {
     color: #9d6538;
 }
+
 
 
 .menu {
@@ -436,6 +448,11 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    width: 150px;
+    height: 100px;
+}
+
 .menu {
     display: grid;
     grid-gap: 5px;
@@ -450,64 +467,91 @@ body {
     "otherCoffee";
 }
 
+.espresso {
+    grid-area: espresso;
+    margin-bottom: -50px;
+}
+
+.doppio {
+    grid-area: doppio;
+    margin-bottom: -100px; 
+}
+
+.shortMacchiato {
+    grid-area: shortMacchiato;
+    margin-bottom: -100px; 
+}
+
+.longMacchiato {
+    grid-area: longMacchiato;
+    margin-bottom: -120px; 
+}
+
+.latte {
+    grid-area: latte;
+    margin-bottom: -120px; 
+}
+
+.mezzo {
+    grid-area: mezzo;
+    margin-bottom: -120px; 
+}
+
+.otherCoffee {
+    grid-area: otherCoffee;
+    margin-bottom: -120px; 
+    display: none;
+}
+
+
+
 
  .gallery {
     display: grid;
     grid-gap: 10px;
    grid-template-areas: 
-   "espressoImage"
-   "doppioImage"
-   "shortMacchiatoImage"
-   "longMacchiatoImage"
-   "latteImage"
-   "mezzoImage"
-   "ristrettoImage"
-   "flatWhiteImage"
-   "longBlackImage";
+   "espressoImage doppioImage"
+   "shortMacchiatoImage longMacchiatoImage"
+   "latteImage mezzoImage"
+   "ristrettoImage flatWhiteImage"
+   "longBlackImage longBlackImage";
  }
 
  .espressoImage {
     grid-area: espressoImage;
-    margin-right: 50px;
  }
 
  .doppioImage {
     grid-area: doppioImage;
-    margin-right: 50px;
  }
 
  .shortMacchiatoImage {
     grid-area: shortMacchiatoImage;
-    margin-right: 50px;
  }
 
  .longMacchiatoImage {
     grid-area: longMacchiatoImage;
-    margin-right: 50px;
  }
 
  .latteImage {
     grid-area: latteImage;
-    margin-right: 50px;
  }
 
  .mezzoImage {
     grid-area: mezzoImage;
-    margin-right: 50px;
  }
 
  .ristrettoImage {
     grid-area: ristrettoImage;
-    margin-right: 50px;
  }
+
  .flatWhiteImage {
     grid-area: flatWhiteImage;
-    margin-right: 50px;
  }
 
  .longBlackImage {
     grid-area: longBlackImage;
-    margin-right: 50px;
+    display: none;
  }
 
  .theFoot {
@@ -522,22 +566,22 @@ body {
 
  .ourOffice {
     grid-area: ourOffice;
-    margin-right: 50px;
  }
 
  .useFulLInk {
     grid-area: useFulLInk;
-    margin-right: 50px;
  }
 
  .newsletter {
     grid-area: newsletter;
     margin-left: 0px;
-    margin-right: 50px;
  }
 
  .downDown {
     grid-area: downDown;
-    margin-right: 50px;
+ }
+
+ .downDown li {
+    padding-right: 50px;
  }
 }
