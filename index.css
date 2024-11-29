@@ -1,4 +1,5 @@
 body {
+    border: 1px solid black;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -19,6 +20,8 @@ body {
 }
 
 header {
+    border: 1px solid black;
+    display: flex;
     padding-top: 20px;
     width: 100%;
 }
@@ -31,15 +34,18 @@ p {
 
 
 .logo {
-    float: left;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
     padding-left: 50px;
     cursor: pointer;
 }
+
 nav {
+    border: 1px solid black;
     display: flex;
     flex: 1;
-    justify-content: end;
-    padding-right: 30px;
+    justify-content: flex-end;
     cursor: pointer;
 }
 
@@ -76,7 +82,19 @@ nav li a:hover {
 .our-story p {
     font-style: italic;
 }
-.our-story, footer {
+
+.our-story {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: #9d6538;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    color: white;
+}
+
+footer {
     background-color: #9d6538;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -96,21 +114,28 @@ nav li a:hover {
 
 .menu {
     display: grid;
+    border: 1px solid black;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 5% 35% 32% 20%;
     grid-gap: 10px;
-    grid-template-areas: 
+    /* grid-template-areas: 
     "ourMenu ourMenu ourMenu"
     "espresso doppio shortMacchiato"
     "longMacchiato latte mezzo"
-    "otherCoffee otherCoffee otherCoffee";
+    "otherCoffee otherCoffee otherCoffee"; */
 }
 
 .ourMenu {
-    grid-area: ourMenu;
-    text-align: center;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: fit-content;
 }
 
 .espresso {
-    grid-area: espresso;
+    border: 1px solid black;
+    grid-row-start: 2;
+    grid-column-start: 1;
     text-align: justify;
     width: 26rem;
     height: 280px;
@@ -126,7 +151,9 @@ nav li a:hover {
 }
 
 .doppio {
-    grid-area: doppio;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-start: 2;
     text-align: justify;
     width: 26rem;
     height: 280px;
@@ -143,7 +170,9 @@ nav li a:hover {
 
 
 .shortMacchiato {
-    grid-area: shortMacchiato;
+    border: 1px solid black;
+    grid-column-start: 3;
+    grid-row-start: 2;
     text-align: justify;
     width: 26rem;
     height: 280px;
@@ -160,7 +189,9 @@ nav li a:hover {
 
 
 .longMacchiato {
-    grid-area: longMacchiato;
+    border: 1px solid black;
+    grid-row-start: 3;
+    grid-column-start: 1;
     text-align: justify;
     width: 26rem;
     height: 280px;
@@ -176,10 +207,12 @@ nav li a:hover {
 }
 
 .latte {
-    grid-area: latte;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-start: 3;
     text-align: justify;
     width: 26rem;
-    height: 280px;
+    height: fit-content;
 }
 
 .latte:hover {
@@ -192,7 +225,9 @@ nav li a:hover {
 }
 
 .mezzo {
-    grid-area: mezzo;
+    border: 1px solid black;
+    grid-column-start: 3;
+    grid-row-start: 3;
     text-align: justify;
     width: 26rem;
     height: 280px;
@@ -208,31 +243,35 @@ nav li a:hover {
 }
 
 .otherCoffee {
-    grid-area: otherCoffee;
+    border: 1px solid black;
+    grid-row-start: 4;
+    grid-column-end: 3;
     text-align: center;
     margin: 0 auto;
     width: 26rem;
-    height: 280px;
+    height: fit-content;
 }
 
 .otherCoffee:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 550px;
-    width: 370px;
+    width: 26rem;
     height: fit-content;
 }
 
 
 .theFoot {
+    border: 1px solid black;
     display: grid;
-    grid-gap: 10px;  
-    grid-template-areas:
+    grid-gap: 10px;
+    grid-template-columns: 30% 30% 30%;  
+    grid-template-rows: 30% 30% 30% 30%;
+    /* grid-template-areas:
     "ourOffice usefulLink newsletter"
     "ourOffice usefulLink newsletter"
     "ourOffice usefulLink newsletter"
-    "downDown downDown downDown";   
+    "downDown downDown downDown";    */
 }
 
 .theFoot a {
@@ -241,36 +280,41 @@ nav li a:hover {
 }
 
 .ourOffice {
-    grid-area: ourOffice;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-row-end: span 2;
     text-align: justify;
     width: 300px;
     height: fit-content;
 }
 
 .usefulLink {
-    grid-area: usefulLink;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-end: span 2;
     text-align: justify;
-    width: 400px;
+    width: 20rem;
     height: fit-content;
-    margin-left: 50px;
 }
 
 .usefulLink li{
     padding-left: 50px;
-    padding-right: 50px;
     list-style-type: none;
 }
 
 .newsletter {
-    grid-area: newsletter;
+    border: 1px solid black;
+    grid-column-start: 3;
+    grid-row-end: span 2;
     text-align: justify;
     width: 500px;
     height: fit-content;
-    margin-left: 50px;
 }
 
 .downDown {
-    grid-area: downDown;
+    grid-row-start: 3;
+    grid-column-end: span 4;
+    border: 1px solid black;
 }
 
 .forInput {
@@ -298,24 +342,29 @@ nav li a:hover {
 
 
 img {
-    width: 400px;
+    width: 24rem;
     height: 280px;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 2), 0 6px 20px 0 rgb(0, 0, 0, 19);
     border-radius: 20px;
 }
 
 .gallery {
+    border: 1px solid black;
    padding: 50px;
    display: grid;
-   grid-gap: 10px;
-   grid-template-areas: 
+   grid-gap: 50px;
+   grid-template-columns: 30% 30% 30%;
+   grid-template-rows: 30% 30% 30%;
+   /* grid-template-areas: 
    "espressoImage doppioImage shortMacchiatoImage"
    "longMacchiatoImage latteImage mezzoImage"
-   "ristrettoImage flatWhiteImage longBlackImage";
+   "ristrettoImage flatWhiteImage longBlackImage"; */
 }
 
 .espressoImage {
-    grid-area: espressoImage;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-row-start: 1;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -325,7 +374,9 @@ img {
 }
 
 .doppioImage {
-    grid-area: doppioImage;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-start: 1;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -335,7 +386,9 @@ img {
 }
 
 .shortMacchiatoImage {
-    grid-area: shortMacchiatoImage;
+    border: 1px solid black;
+    grid-column-start: 3;
+    grid-row-start: 1;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -345,7 +398,9 @@ img {
 }
 
 .longMacchiatoImage {
-    grid-area: longMacchiatoImage;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-row-start: 2;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -355,7 +410,9 @@ img {
 }
 
 .latteImage {
-    grid-area: latteImage;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-start: 2;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -365,7 +422,9 @@ img {
 }
 
 .mezzoImage {
-    grid-area: mezzoImage;
+    border: 1px solid black;
+    grid-column-start: 3;
+    grid-row-start: 2;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -375,7 +434,9 @@ img {
 }
 
 .ristrettoImage {
-    grid-area: ristrettoImage;
+    border: 1px solid black;
+    grid-column-start: 1;
+    grid-row-start: 3;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -385,7 +446,9 @@ img {
 }
 
 .flatWhiteImage {
-    grid-area: flatWhiteImage;
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-row-start: 3;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -395,7 +458,9 @@ img {
 }
 
 .longBlackImage {
-    grid-area: longBlackImage;
+    border: 1px solid black;
+    grid-column-start: 3;
+    grid-row-start: 3;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -422,8 +487,7 @@ img {
 
 .copyW {
     display: flex;
-    flex: 1;
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 30px;
     cursor: pointer;
 }
@@ -447,29 +511,31 @@ and (orientation: portrait)
 
 header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.our-story, footer {
-    background-color: #9d6538;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: justify;
-    color: white;
-    width: 100%;
-}
-
-header .logo {
+.logo {
     font-size: 2.5rem;
-    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-story {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     justify-content: center;
     width: 100%;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 img {
@@ -478,134 +544,89 @@ img {
 }
 
 .menu {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 
-    "ourMenu"
-    "espresso"
-    "doppio"
-    "shortMacchiato"
-    "longMacchiato"
-    "latte"
-    "mezzo"
-    "otherCoffee";
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-
-.espresso {
-    grid-area: espresso;
-    margin-bottom: -50px;
-}
-
-.doppio {
-    grid-area: doppio;
-    margin-bottom: -100px; 
-}
-
-.shortMacchiato {
-    grid-area: shortMacchiato;
-    margin-bottom: -100px; 
-}
-
-.longMacchiato {
-    grid-area: longMacchiato;
-    margin-bottom: -120px; 
-}
-
-.latte {
-    grid-area: latte;
-    margin-bottom: -120px; 
-}
-
-.mezzo {
-    grid-area: mezzo;
-    margin-bottom: -120px; 
-}
-
-.otherCoffee {
-    grid-area: otherCoffee;
-    margin-bottom: -120px; 
-    display: none;
-}
-
 
 
 
  .gallery {
     display: grid;
     grid-gap: 10px;
-   grid-template-areas: 
-   "espressoImage doppioImage"
-   "shortMacchiatoImage longMacchiatoImage"
-   "latteImage mezzoImage"
-   "ristrettoImage flatWhiteImage"
-   "longBlackImage longBlackImage";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25% 25%;
  }
 
+
+
  .espressoImage {
-    grid-area: espressoImage;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: fit-content;
  }
 
  .doppioImage {
-    grid-area: doppioImage;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: fit-content;
  }
 
  .shortMacchiatoImage {
-    grid-area: shortMacchiatoImage;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    height: fit-content;
  }
 
  .longMacchiatoImage {
-    grid-area: longMacchiatoImage;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    height: fit-content;
  }
 
  .latteImage {
-    grid-area: latteImage;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    height: fit-content;
  }
 
  .mezzoImage {
-    grid-area: mezzoImage;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    height: fit-content;
  }
 
  .ristrettoImage {
-    grid-area: ristrettoImage;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    height: fit-content;
  }
 
  .flatWhiteImage {
-    grid-area: flatWhiteImage;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    height: fit-content;
  }
 
  .longBlackImage {
-    grid-area: longBlackImage;
+    grid-column-start: span 2;
+    grid-row-start: 5;
     display: none;
  }
 
  .theFoot {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 
-    "ourOffice"
-    "useFulLInk"
-    "newsletter"
-    "downDown";
- }
-
- .ourOffice {
-    grid-area: ourOffice;
- }
-
- .useFulLInk {
-    grid-area: useFulLInk;
- }
-
- .newsletter {
-    grid-area: newsletter;
-    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
  }
 
  .downDown {
-    grid-area: downDown;
- }
-
- .downDown li {
-    padding-right: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
  }
 }
