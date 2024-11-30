@@ -607,7 +607,6 @@ img {
 
 .usefulLink {
     margin-left: -40px;
-    border: 1px solid black;
     width: 20rem;
     height: fit-content;
 }
@@ -634,12 +633,7 @@ img {
  .downLogo {
     display: flex;
  }
-
- .copyW {
-    border: 1px solid black;
- }
  .copyW li {
-    border: 1px solid black;
     color: #ccc;
  }
 }
