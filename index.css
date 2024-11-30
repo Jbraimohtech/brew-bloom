@@ -1,5 +1,4 @@
 body {
-    border: 1px solid black;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -14,13 +13,13 @@ body {
     color: black;
     background-color: white;
     width: 300px;
-    height: 150px;
+    height: fit-content;
     padding: 20px;
     margin: 20px auto;
+    border-radius: 2-px;
 }
 
 header {
-    border: 1px solid black;
     display: flex;
     padding-top: 20px;
     width: 100%;
@@ -34,7 +33,6 @@ p {
 
 
 .logo {
-    border: 1px solid black;
     display: flex;
     justify-content: flex-start;
     padding-left: 50px;
@@ -42,7 +40,6 @@ p {
 }
 
 nav {
-    border: 1px solid black;
     display: flex;
     flex: 1;
     justify-content: flex-end;
@@ -84,7 +81,6 @@ nav li a:hover {
 }
 
 .our-story {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     background-color: #9d6538;
@@ -114,19 +110,12 @@ footer {
 
 .menu {
     display: grid;
-    border: 1px solid black;
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 5% 35% 32% 20%;
     grid-gap: 10px;
-    /* grid-template-areas: 
-    "ourMenu ourMenu ourMenu"
-    "espresso doppio shortMacchiato"
-    "longMacchiato latte mezzo"
-    "otherCoffee otherCoffee otherCoffee"; */
 }
 
 .ourMenu {
-    border: 1px solid black;
     grid-column-start: 1;
     grid-column-end: 4;
     height: fit-content;
@@ -134,7 +123,6 @@ footer {
 }
 
 .espresso {
-    border: 1px solid black;
     grid-row-start: 2;
     grid-column-start: 1;
     text-align: justify;
@@ -151,7 +139,6 @@ footer {
 }
 
 .doppio {
-    border: 1px solid black;
     grid-column-start: 2;
     grid-row-start: 2;
     text-align: justify;
@@ -169,7 +156,6 @@ footer {
 
 
 .shortMacchiato {
-    border: 1px solid black;
     grid-column-start: 3;
     grid-row-start: 2;
     text-align: justify;
@@ -187,7 +173,6 @@ footer {
 
 
 .longMacchiato {
-    border: 1px solid black;
     grid-row-start: 3;
     grid-column-start: 1;
     text-align: justify;
@@ -204,7 +189,6 @@ footer {
 }
 
 .latte {
-    border: 1px solid black;
     grid-column-start: 2;
     grid-row-start: 3;
     text-align: justify;
@@ -221,7 +205,6 @@ footer {
 }
 
 .mezzo {
-    border: 1px solid black;
     grid-column-start: 3;
     grid-row-start: 3;
     text-align: justify;
@@ -238,7 +221,6 @@ footer {
 }
 
 .otherCoffee {
-    border: 1px solid black;
     grid-row-start: 4;
     grid-column-end: 3;
     text-align: center;
@@ -258,7 +240,6 @@ footer {
 
 
 .theFoot {
-    border: 1px solid black;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 30% 30% 30%;  
@@ -276,7 +257,6 @@ footer {
 }
 
 .ourOffice {
-    border: 1px solid black;
     grid-column-start: 1;
     grid-row-end: span 2;
     text-align: justify;
@@ -285,7 +265,6 @@ footer {
 }
 
 .usefulLink {
-    border: 1px solid black;
     grid-column-start: 2;
     grid-row-end: span 2;
     text-align: justify;
@@ -299,7 +278,6 @@ footer {
 }
 
 .newsletter {
-    border: 1px solid black;
     grid-column-start: 3;
     grid-row-end: span 2;
     text-align: justify;
@@ -310,7 +288,6 @@ footer {
 .downDown {
     grid-row-start: 3;
     grid-column-end: span 4;
-    border: 1px solid black;
 }
 
 .forInput {
@@ -345,20 +322,14 @@ img {
 }
 
 .gallery {
-    border: 1px solid black;
    padding: 50px;
    display: grid;
    grid-gap: 50px;
    grid-template-columns: 30% 30% 30%;
    grid-template-rows: 30% 30% 30%;
-   /* grid-template-areas: 
-   "espressoImage doppioImage shortMacchiatoImage"
-   "longMacchiatoImage latteImage mezzoImage"
-   "ristrettoImage flatWhiteImage longBlackImage"; */
 }
 
 .espressoImage {
-    border: 1px solid black;
     grid-column-start: 1;
     grid-row-start: 1;
     text-align: center;
@@ -370,7 +341,6 @@ img {
 }
 
 .doppioImage {
-    border: 1px solid black;
     grid-column-start: 2;
     grid-row-start: 1;
     text-align: center;
@@ -382,7 +352,6 @@ img {
 }
 
 .shortMacchiatoImage {
-    border: 1px solid black;
     grid-column-start: 3;
     grid-row-start: 1;
     text-align: center;
@@ -394,7 +363,6 @@ img {
 }
 
 .longMacchiatoImage {
-    border: 1px solid black;
     grid-column-start: 1;
     grid-row-start: 2;
     text-align: center;
@@ -406,7 +374,6 @@ img {
 }
 
 .latteImage {
-    border: 1px solid black;
     grid-column-start: 2;
     grid-row-start: 2;
     text-align: center;
@@ -418,7 +385,6 @@ img {
 }
 
 .mezzoImage {
-    border: 1px solid black;
     grid-column-start: 3;
     grid-row-start: 2;
     text-align: center;
@@ -430,7 +396,6 @@ img {
 }
 
 .ristrettoImage {
-    border: 1px solid black;
     grid-column-start: 1;
     grid-row-start: 3;
     text-align: center;
@@ -442,7 +407,6 @@ img {
 }
 
 .flatWhiteImage {
-    border: 1px solid black;
     grid-column-start: 2;
     grid-row-start: 3;
     text-align: center;
@@ -454,7 +418,6 @@ img {
 }
 
 .longBlackImage {
-    border: 1px solid black;
     grid-column-start: 3;
     grid-row-start: 3;
     text-align: center;
@@ -498,7 +461,6 @@ img {
 .copyW li {
     float: left;
     padding: 10px;
-    border: 1px solid black;
     color: #ccc;
 }
 
