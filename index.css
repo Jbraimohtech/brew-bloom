@@ -130,6 +130,7 @@ footer {
     grid-column-start: 1;
     grid-column-end: 4;
     height: fit-content;
+    
 }
 
 .espresso {
@@ -144,8 +145,7 @@ footer {
 .espresso:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    transition: transform 0.3s ease;
     width: 400px;
     height: fit-content;
 }
@@ -162,8 +162,7 @@ footer {
 .doppio:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    transition: transform 0.3s ease;
     width: 400px;
     height: fit-content;
 }
@@ -181,8 +180,7 @@ footer {
 .shortMacchiato:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    transition: transform 0.3s ease;
     width: 400px;
     height: fit-content;
 }
@@ -200,8 +198,7 @@ footer {
 .longMacchiato:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    transition: transform 0.3s ease;
     width: 400px;
     height: fit-content;
 }
@@ -218,8 +215,7 @@ footer {
 .latte:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    transition: transform 0.3s ease;
     width: 400px;
     height: fit-content;
 }
@@ -236,8 +232,7 @@ footer {
 .mezzo:hover {
     box-shadow: 0 4px 8px 0  #9d6538, 0 6px 20px 0  #9d6538;
     border-radius: 10px;
-    padding: 10px;
-    margin: 50px;
+    transition: transform 0.3s ease;
     width: 400px;
     height: fit-content;
 }
@@ -258,6 +253,7 @@ footer {
     padding: 10px;
     width: 26rem;
     height: fit-content;
+    transition: transform 0.3s ease;
 }
 
 
@@ -502,6 +498,8 @@ img {
 .copyW li {
     float: left;
     padding: 10px;
+    border: 1px solid black;
+    color: #ccc;
 }
 
 @media only screen
@@ -618,15 +616,68 @@ img {
  .theFoot {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    justify-content: flex-start;
+    justify-items: flex-start;
  }
 
  .downDown {
     width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    justify-content: flex-start;
+    justify-items:flex-start;
+ }
+
+ .newsletter {
+    width: 400px;
+ }
+
+
+ .forInput {
+    border-bottom: 0.5px solid white;
+    display: flex;
+}
+
+.forInput a {
+    margin-left: -30px;
+}
+
+
+.usefulLink {
+    margin-left: -40px;
+    border: 1px solid black;
+    width: 20rem;
+    height: fit-content;
+}
+
+.usefulLink li{
+    list-style-type: none;
+}
+
+.newsletter input {
+    margin-right: 50px;
+    background-color: #9d6538;
+    border: none;
+    padding-bottom: 10px;
+}
+
+.newsletter input::placeholder {
+    border: none;
+    font-size: smaller;
+    color: white;
+}
+ .fa-brands {
+    font-size: 1rem;
+ }
+ .downLogo {
+    display: flex;
+ }
+
+ .copyW {
+    border: 1px solid black;
+ }
+ .copyW li {
+    border: 1px solid black;
+    color: #ccc;
  }
 }
